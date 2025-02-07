@@ -1,0 +1,47 @@
+
+.aicolumns-wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.aicolumns-2-cols {
+  display: flex;
+  width: 100%;
+}
+
+.aicolumns > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.aicolumns img {
+  width: 100%;
+}
+
+.aicolumns > div > div {
+  order: 1;
+}
+
+.aicolumns > div > .aicolumns-img-col {
+  order: 0;
+}
+
+.aicolumns > div > .aicolumns-img-col img {
+  display: block;
+}
+
+@media (min-width: 900px) {
+  .aicolumns > div {
+    align-items: center;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .aicolumns > div > div {
+    flex: 1;
+    order: unset;
+  }
+}
