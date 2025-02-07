@@ -1,0 +1,52 @@
+
+.aicolumns {
+  display: flex;
+  justify-content: space-between; /* Add space between the two columns if needed */
+}
+
+.aicolumns > div {
+  flex: 1;
+  margin: 0 10px; /* Optional: Add margins between the columns */
+}
+
+.aicolumns > div:first-child {
+  margin-right: 20px; /* Ensure spacing between the two columns */
+}
+
+.aicolumns > div:last-child {
+  margin-left: 20px; /* Ensure spacing between the two columns */
+}
+
+.aicolumns > div > div {
+  display: flex;
+  flex-direction: column; /* Stack content vertically inside each column */
+}
+
+.aicolumns img {
+  width: 100%;
+}
+
+.aicolumns > div > div {
+  order: 1;
+}
+
+.aicolumns > div > .aicolumns-img-col {
+  order: 0;
+}
+
+.aicolumns > div > .aicolumns-img-col img {
+  display: block;
+}
+
+@media (min-width: 900px) {
+  .aicolumns > div {
+    align-items: center;
+    flex-direction: unset;
+    gap: 24px;
+  }
+
+  .aicolumns > div > div {
+    flex: 1;
+    order: unset;
+  }
+}
