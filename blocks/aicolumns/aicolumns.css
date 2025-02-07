@@ -1,51 +1,63 @@
 
+.aicolumns-wrapper {
+    background-color: #000; /* Set background to black */
+    color: #fff; /* Set text color to white */
+    padding: 20px; /* Add padding for better spacing */
+}
+
 .aicolumns-wrapper .aicolumns {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 24px;
+    flex-direction: row; /* Ensure the main sections are side-by-side */
+    align-items: flex-start; /* Align items at the top */
+    gap: 24px; /* Maintain gap between sections */
 }
 
 .aicolumns > div {
-    flex: 1;
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* Ensure the second-level divs are side-by-side */
+    gap: 24px; /* Maintain gap between columns */
+    flex: 1;
+}
+
+.aicolumns > div:first-child {
+    max-width: 25%; /* Limit the width of the left column */
+    display: flex;
+    flex-direction: column; /* Ensure content within the left column is vertical */
+    gap: 24px;
+}
+
+.aicolumns > div:last-child {
+    max-width: 75%; /* Allocate the remaining space to the right column */
+    display: flex;
+    flex-direction: column; /* Ensure content within the right column is vertical */
     gap: 24px;
 }
 
 .aicolumns img {
     max-width: 100%;
     height: auto;
+    display: block; /* Ensure images are block elements */
+    margin: 0 auto; /* Center align the images */
 }
 
-.aicolumns > div:first-child {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 24px;
+.aicolumns h2, .aicolumns p {
+    margin: 0 0 10px 0;
+    line-height: 1.5; /* Improve readability */
 }
 
-.aicolumns > div:last-child {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 24px;
+/* Additional styling for links to match the original */
+.aicolumns-wrapper a {
+    color: #3b63fb; /* Set link color to blue */
+    text-decoration: none;
 }
 
-.aicolumns > div:last-child > div {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
+.aicolumns-wrapper a:hover {
+    color: #1d3ecf; /* Set hover color to a darker blue */
+    text-decoration: underline;
 }
 
-.aicolumns > div:last-child > div > div {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-@media (width >= 900px) {
+/* Responsive adjustments */
+@media (min-width: 900px) {
     .aicolumns-wrapper .aicolumns {
         gap: 24px;
     }
