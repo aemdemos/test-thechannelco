@@ -1,0 +1,61 @@
+
+.aicolumns-wrapper {
+  background-color: #000; /* Set background color to black */
+  color: #fff; /* Set text color to white */
+  padding: 20px; /* Add padding around the content block */
+}
+
+.aicolumns > div {
+  display: flex;
+  flex-direction: row; /* Ensure columns are side by side */
+  justify-content: space-between; /* Ensure columns are spaced equally */
+  align-items: flex-start; /* Align items to the top */
+}
+
+.aicolumns > div > div {
+  flex: 1; /* Ensure each column takes equal space */
+  margin: 0 5px; /* Adjust margin between columns for closer spacing */
+  padding: 0 20px; /* Add padding inside each column */
+  display: flex;
+  flex-direction: column; /* Stack inner content vertically */
+  justify-content: flex-start; /* Align inner content to the top */
+}
+
+.aicolumns .column-1, .aicolumns .column-2, .aicolumns .column-3 {
+  background-color: transparent; /* Ensure background color is transparent */
+}
+
+.aicolumns h2 {
+  font-family: Lato, sans-serif; /* Adjust typography of numerals */
+  color: #fff; /* Set numeral color to white */
+  margin: 0 0 10px; /* Remove default margin and add bottom margin */
+}
+
+.aicolumns h3 {
+  color: #fff; /* Set header text color to white */
+  margin: 0 0 10px; /* Remove default margin and add bottom margin */
+}
+
+.aicolumns p, .aicolumns ul {
+  color: #fff; /* Set paragraph text and list text color to white */
+  margin: 0 0 10px; /* Remove default margin and add bottom margin */
+}
+
+.aicolumns hr {
+  display: none; /* Ensure separating line is removed */
+}
+
+.aicolumns > div > div > * {
+  margin-bottom: 10px; /* Add spacing between inner elements */
+}
+
+.aicolumns > div > div > *:last-child {
+  margin-bottom: 0; /* Remove bottom margin from the last element */
+}
+
+/* If the columns block is supposed to span the entire width of the viewport */
+.aicolumns-container > .aicolumns-wrapper {
+  max-width: unset;
+  padding: 0;
+  margin: 0;
+}
