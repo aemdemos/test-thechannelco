@@ -1,0 +1,31 @@
+
+.aicolumns-wrapper {
+  background-color: #000; /* Set background color to black */
+  color: #fff; /* Set text color to white */
+  padding: 20px; /* Add padding around the content block */
+}
+
+.aicolumns > div {
+  display: flex;
+  flex-direction: row; /* Ensure columns are side by side */
+  justify-content: space-between; /* Ensure columns are spaced equally */
+  align-items: stretch; /* Stretch columns to the same height */
+}
+
+.aicolumns > div > div {
+  flex: 1; /* Ensure each column takes equal space */
+  margin: 0 10px; /* Adjust margin between columns for closer spacing */
+  padding: 20px; /* Add padding inside each column */
+  background-color: transparent; /* Remove background color for each column */
+  display: flex;
+  flex-direction: column; /* Ensure inner content is stacked vertically */
+  justify-content: flex-start; /* Align inner content to the top */
+}
+
+.aicolumns > div > div > * {
+  margin-bottom: 10px; /* Add spacing between inner elements */
+}
+
+.aicolumns > div > div > *:last-child {
+  margin-bottom: 0; /* Remove bottom margin from the last element */
+}
