@@ -230,7 +230,7 @@
             "x": 0,
             "y": 844,
             "mapping": "columns",
-            "customBlockName": "aicolumns-1"
+            "customBlockName": "aicolumns"
           },
           {
             "url": "https://www.thechannelco.com/solutions/",
@@ -314,7 +314,7 @@
             "x": 0,
             "y": 4279,
             "mapping": "columns",
-            "customBlockName": "aicolumns-2"
+            "customBlockName": "aicolumns"
           },
           {
             "url": "https://www.thechannelco.com/solutions/audiences/",
