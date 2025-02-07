@@ -41,7 +41,7 @@
 }
 
 .aicolumns h2, .aicolumns p {
-    margin: 0 0 10px 0;
+    margin: 0 0 10px;
     line-height: 1.5; /* Improve readability */
 }
 
@@ -57,7 +57,7 @@
 }
 
 /* Responsive adjustments */
-@media (min-width: 900px) {
+@media (width >= 900px) {
     .aicolumns-wrapper .aicolumns {
         gap: 24px;
     }
