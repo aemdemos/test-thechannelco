@@ -26,19 +26,19 @@
 }
 
 .aicolumns h2 {
-  font-family: 'Lato', sans-serif; /* Adjust typography of numerals */
+  font-family: Lato, sans-serif; /* Adjust typography of numerals */
   color: #fff; /* Set numeral color to white */
-  margin: 0 0 10px 0; /* Remove default margin and add bottom margin */
+  margin: 0 0 10px; /* Remove default margin and add bottom margin */
 }
 
 .aicolumns h3 {
   color: #fff; /* Set header text color to white */
-  margin: 0 0 10px 0; /* Remove default margin and add bottom margin */
+  margin: 0 0 10px; /* Remove default margin and add bottom margin */
 }
 
 .aicolumns p, .aicolumns ul {
   color: #fff; /* Set paragraph text and list text color to white */
-  margin: 0 0 10px 0; /* Remove default margin and add bottom margin */
+  margin: 0 0 10px; /* Remove default margin and add bottom margin */
 }
 
 .aicolumns hr {
